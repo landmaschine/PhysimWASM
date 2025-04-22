@@ -25,5 +25,5 @@ void Game::update(double deltaTime) {
 }
 
 void Game::render(IRenderer* renderer) {
-
+  renderer->render();
 }
