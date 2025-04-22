@@ -31,12 +31,18 @@ OpenGLRenderer::OpenGLRenderer(const std::shared_ptr<Context> ctx) {
 
   const uint8_t* version = glGetString(GL_VERSION);  
   LOG("OpenGL Version: ", (version ? (const char*)version : "Unkown"));
+
+  initSpriteRenderer();
 }
 
 void OpenGLRenderer::beginFrame() {
   glClearColor(0.3, 0.3, 0.3, 1.0f);
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   glViewport(0, 0, m_ctx->window_data.width, m_ctx->window_data.height);
+
+  if(m_spriteRenderer) {
+    m_spriteRenderer->begin();
+  }
 }
 
 void OpenGLRenderer::render() {
@@ -44,13 +50,39 @@ void OpenGLRenderer::render() {
 }
 
 void OpenGLRenderer::endFrame() {
+  if(m_spriteRenderer) {
+    m_spriteRenderer->end();
+  }
+
   SDL_GL_SwapWindow(m_window);
 }
 
 void OpenGLRenderer::resize() {
   SDL_GetWindowSizeInPixels(m_window, (int*)&m_ctx->window_data.width, (int*)&m_ctx->window_data.height);
+
+  if(m_spriteRenderer) {
+    m_spriteRenderer->resize(m_ctx->window_data.width, m_ctx->window_data.height);
+  }
 }
 
-void OpenGLRenderer::setShader(const Shader&) {
+void OpenGLRenderer::setShader(const Shader& shader) {
+  if(m_spriteRenderer) {
+    m_spriteRenderer->setShader(shader);
+  }
+}
 
+void OpenGLRenderer::initSpriteRenderer() {
+  m_spriteRenderer = std::make_unique<SpriteRenderer>();
+  m_spriteRenderer->init(m_ctx->window_data.width, m_ctx->window_data.height);
+  LOG("Sprite renderer initialized");
+}
+
+void OpenGLRenderer::drawSprite(const Texture* texture, const glm::vec2& position, const glm::vec2& size, float rotation, const glm::vec4& color) {
+  if(m_spriteRenderer) {
+    m_spriteRenderer->drawSprite(texture, position, size, rotation, color);
+  }
+}
+
+bool OpenGLRenderer::loadTexture(const std::string& path, Texture& texture) {
+  return texture.loadFromFile(path);
 }

@@ -30,14 +30,19 @@ OpenGLES3Renderer::OpenGLES3Renderer(const std::shared_ptr<Context> ctx) {
   m_ctx = ctx;
 
   const uint8_t* version = glGetString(GL_VERSION);  
-  LOG("OpenGL Version: ", (version ? (const char*)version : "Unkown"));
+  LOG("OpenGL Version: ", (version ? (const char*)version : "Unknown"));
+  
+  initSpriteRenderer();
 }
 
 void OpenGLES3Renderer::beginFrame() {
   glClearColor(0.3, 0.3, 0.3, 1.0f);
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   glViewport(0, 0, m_ctx->window_data.width, m_ctx->window_data.height);
-
+  
+  if (m_spriteRenderer) {
+    m_spriteRenderer->begin();
+  }
 }
 
 void OpenGLES3Renderer::render() {
@@ -45,13 +50,40 @@ void OpenGLES3Renderer::render() {
 }
 
 void OpenGLES3Renderer::endFrame() {
+  if (m_spriteRenderer) {
+    m_spriteRenderer->end();
+  }
+  
   SDL_GL_SwapWindow(m_window);
 }
 
 void OpenGLES3Renderer::resize() {
   SDL_GetWindowSizeInPixels(m_window, (int*)&m_ctx->window_data.width, (int*)&m_ctx->window_data.height);
+  
+  if (m_spriteRenderer) {
+    m_spriteRenderer->resize(m_ctx->window_data.width, m_ctx->window_data.height);
+  }
 }
 
-void OpenGLES3Renderer::setShader(const Shader&) {
+void OpenGLES3Renderer::setShader(const Shader& shader) {
+  if (m_spriteRenderer) {
+    m_spriteRenderer->setShader(shader);
+  }
+}
 
+void OpenGLES3Renderer::initSpriteRenderer() {
+  m_spriteRenderer = std::make_unique<SpriteRenderer>();
+  m_spriteRenderer->init(m_ctx->window_data.width, m_ctx->window_data.height);
+  LOG("Sprite renderer initialized");
+}
+
+void OpenGLES3Renderer::drawSprite(const Texture* texture, const glm::vec2& position, 
+                               const glm::vec2& size, float rotation, const glm::vec4& color) {
+  if (m_spriteRenderer) {
+    m_spriteRenderer->drawSprite(texture, position, size, rotation, color);
+  }
+}
+
+bool OpenGLES3Renderer::loadTexture(const std::string& path, Texture& texture) {
+  return texture.loadFromFile(path);
 }

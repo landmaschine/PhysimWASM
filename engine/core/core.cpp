@@ -55,7 +55,7 @@ void CoreEngine::run() {
     
     double frameEndTime = SDL_GetTicks();
     double frameProcessingTime = (frameEndTime - currentTime) / 1000.0;
-    double targetFrameTime = 1.0 / 60.0; 
+    double targetFrameTime = m_gameLoopData.targetFrameTime;
     
     if (frameProcessingTime < targetFrameTime) {
       uint32_t sleepTime = static_cast<uint32_t>((targetFrameTime - frameProcessingTime) * 1000);

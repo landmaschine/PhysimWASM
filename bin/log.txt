@@ -34,3 +34,115 @@
 [2025-04-21 22:18:37][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
 [2025-04-22 12:09:22][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
 [2025-04-22 12:09:22][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:05:57][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:05:57][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:05:57][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:08:30][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:08:30][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:08:30][ERROR] {renderer\loadShader.hpp:39} ERROR::SHADER::FILE_NOT_SUCCESSFULLY_READ: ios_base::failbit set: iostream stream error
+[2025-04-22 17:08:30][ERROR] {renderer\loadShader.hpp:175} ERROR::PROGRAM_LINKING_ERROR of type: PROGRAM
+ERROR: Linking vertex stage: Missing entry point: Each stage requires one entry point
+ERROR: Linking fragment stage: Missing entry point: Each stage requires one entry point
+
+ -- --------------------------------------------------- -- 
+[2025-04-22 17:08:30][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:08:30][WARNING] {renderer\loadShader.hpp:139} Warning: Uniform 'projection' doesn't exist or is not used in the shader.
+[2025-04-22 17:11:15][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:11:15][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:11:15][ERROR] {renderer\loadShader.hpp:39} ERROR::SHADER::FILE_NOT_SUCCESSFULLY_READ: ios_base::failbit set: iostream stream error
+[2025-04-22 17:11:15][ERROR] {renderer\loadShader.hpp:175} ERROR::PROGRAM_LINKING_ERROR of type: PROGRAM
+ERROR: Linking vertex stage: Missing entry point: Each stage requires one entry point
+ERROR: Linking fragment stage: Missing entry point: Each stage requires one entry point
+
+ -- --------------------------------------------------- -- 
+[2025-04-22 17:11:15][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:11:15][WARNING] {renderer\loadShader.hpp:139} Warning: Uniform 'projection' doesn't exist or is not used in the shader.
+[2025-04-22 17:12:23][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:12:23][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:12:23][ERROR] {renderer\loadShader.hpp:39} ERROR::SHADER::FILE_NOT_SUCCESSFULLY_READ: ios_base::failbit set: iostream stream error
+[2025-04-22 17:12:23][ERROR] {renderer\loadShader.hpp:175} ERROR::PROGRAM_LINKING_ERROR of type: PROGRAM
+ERROR: Linking vertex stage: Missing entry point: Each stage requires one entry point
+ERROR: Linking fragment stage: Missing entry point: Each stage requires one entry point
+
+ -- --------------------------------------------------- -- 
+[2025-04-22 17:12:23][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:12:23][WARNING] {renderer\loadShader.hpp:139} Warning: Uniform 'projection' doesn't exist or is not used in the shader.
+[2025-04-22 17:12:41][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:12:41][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:12:41][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:19:09][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:19:10][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:19:10][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:19:10][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:19:10][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:19:10][ERROR] {Sprite.cpp:45} Failed to load texture: assets/textures/background.png
+[2025-04-22 17:19:10][WARNING] {Game.cpp:27} Failed to load background texture, using fallback color
+[2025-04-22 17:19:10][ERROR] {Sprite.cpp:45} Failed to load texture: assets/textures/player.png
+[2025-04-22 17:19:10][WARNING] {Game.cpp:32} Failed to load player texture, using fallback color
+[2025-04-22 17:19:10][LOG] {Game.cpp:53} Game initialized
+[2025-04-22 17:19:32][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:19:33][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:19:33][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:19:33][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:19:33][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:19:33][ERROR] {Sprite.cpp:45} Failed to load texture: assets/textures/background.png
+[2025-04-22 17:19:33][WARNING] {Game.cpp:27} Failed to load background texture, using fallback color
+[2025-04-22 17:19:33][LOG] {Game.cpp:53} Game initialized
+[2025-04-22 17:20:53][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:20:53][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:20:53][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:20:53][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:20:53][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:20:53][LOG] {Game.cpp:53} Game initialized
+[2025-04-22 17:22:50][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:22:50][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:22:50][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:22:50][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:22:50][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:22:50][LOG] {Game.cpp:53} Game initialized
+[2025-04-22 17:24:25][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:24:25][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:24:25][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:24:25][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:24:25][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:24:25][ERROR] {Sprite.cpp:45} Failed to load texture: assets/textures/background.png
+[2025-04-22 17:24:25][WARNING] {Game.cpp:27} Failed to load background texture, using fallback color
+[2025-04-22 17:24:25][LOG] {Game.cpp:53} Game initialized
+[2025-04-22 17:24:49][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:24:50][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:24:50][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:24:50][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:24:50][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:24:50][ERROR] {Sprite.cpp:45} Failed to load texture: assets/textures/background.png
+[2025-04-22 17:24:50][WARNING] {Game.cpp:27} Failed to load background texture, using fallback color
+[2025-04-22 17:24:50][LOG] {Game.cpp:45} Game initialized
+[2025-04-22 17:25:01][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:25:01][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:25:01][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:25:01][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:25:01][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:25:01][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 17:25:40][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:25:40][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:25:40][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:25:40][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:25:40][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:25:40][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 17:26:57][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:26:57][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:26:57][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:26:57][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:26:57][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:26:57][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 17:28:41][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:28:41][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:28:41][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:28:41][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:28:41][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:28:41][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 17:28:56][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 17:28:57][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 17:28:57][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:28:57][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 17:28:57][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 17:28:57][LOG] {Game.cpp:40} Game initialized

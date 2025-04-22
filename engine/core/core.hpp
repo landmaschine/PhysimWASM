@@ -10,8 +10,8 @@ typedef struct GameLoopData_t {
   double accumulator;              
   const double maxFrameTime = 0.25; 
   
-  const double targetFPS = 60.0;    
-  const double targetFrameTime = 1.0 / 60.0;  
+  const double targetFPS = 165.0;    
+  const double targetFrameTime = 1.0 / 165.0;  
   
   uint32_t fpsFrameCount = 0;      
   double fpsTimeElapsed = 0.0;     

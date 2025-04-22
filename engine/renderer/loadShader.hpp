@@ -36,7 +36,7 @@ public:
             fragmentCode = fShaderStream.str();
         }
         catch (std::ifstream::failure& e) {
-            std::cout << "ERROR::SHADER::FILE_NOT_SUCCESSFULLY_READ: " << e.what() << std::endl;
+            ERRLOG("ERROR::SHADER::FILE_NOT_SUCCESSFULLY_READ: ", e.what());
         }
         const char* vShaderCode = vertexCode.c_str();
         const char* fShaderCode = fragmentCode.c_str();
@@ -76,7 +76,7 @@ public:
         } else {
             location = glGetUniformLocation(ID, name.c_str());
             if (location == -1) {
-                std::cerr << "Warning: Uniform '" << name << "' doesn't exist or is not used in the shader." << std::endl;
+                WARLOG("Warning: Uniform '", name, "' doesn't exist or is not used in the shader.");
             }
             uniformCache[name] = location;
         }
@@ -91,7 +91,7 @@ public:
         } else {
             location = glGetUniformLocation(ID, name.c_str());
             if (location == -1) {
-                std::cerr << "Warning: Uniform '" << name << "' doesn't exist or is not used in the shader." << std::endl;
+                WARLOG("Warning: Uniform '", name, "' doesn't exist or is not used in the shader.");
             }
             uniformCache[name] = location;
         }
@@ -106,7 +106,7 @@ public:
         } else {
             location = glGetUniformLocation(ID, name.c_str());
             if (location == -1) {
-                std::cerr << "Warning: Uniform '" << name << "' doesn't exist or is not used in the shader." << std::endl;
+                WARLOG("Warning: Uniform '", name, "' doesn't exist or is not used in the shader.");
             }
             uniformCache[name] = location;
         }
@@ -121,7 +121,7 @@ public:
         } else {
             location = glGetUniformLocation(ID, name.c_str());
             if (location == -1) {
-                std::cerr << "Warning: Uniform '" << name << "' doesn't exist or is not used in the shader." << std::endl;
+                WARLOG("Warning: Uniform '", name, "' doesn't exist or is not used in the shader.");
             }
             uniformCache[name] = location;
         }
@@ -136,7 +136,7 @@ public:
         } else {
             location = glGetUniformLocation(ID, name.c_str());
             if(location == -1) {
-                std::cerr << "Warning: Uniform '" << name << "' doesnt exist or is not used in the shader." << std::endl;
+                WARLOG("Warning: Uniform '", name, "' doesn't exist or is not used in the shader.");
             }
             uniformCache[name] = location;
         }
@@ -151,7 +151,7 @@ public:
         } else {
             location = glGetUniformLocation(ID, name.c_str());
             if(location == -1) {
-                std::cerr << "Warning: Uniform '" << name << "' doesnt exist or is not used in the shader." << std::endl;
+                WARLOG("Warning: Uniform '", name, "' doesn't exist or is not used in the shader.");
             }
             uniformCache[name] = location;
         }
@@ -166,13 +166,13 @@ private:
             glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
             if (!success) {
                 glGetShaderInfoLog(shader, 1024, NULL, infoLog);
-                std::cout << "ERROR::SHADER_COMPILATION_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+                ERRLOG("ERROR::SHADER_COMPILATION_ERROR of type: ", type, "\n", infoLog, "\n -- --------------------------------------------------- -- ");
             }
         } else {
             glGetProgramiv(shader, GL_LINK_STATUS, &success);
             if (!success) {
                 glGetProgramInfoLog(shader, 1024, NULL, infoLog);
-                std::cout << "ERROR::PROGRAM_LINKING_ERROR of type: " << type << "\n" << infoLog << "\n -- --------------------------------------------------- -- " << std::endl;
+                ERRLOG("ERROR::PROGRAM_LINKING_ERROR of type: ", type, "\n", infoLog, "\n -- --------------------------------------------------- -- ");
             }
         }
     }
