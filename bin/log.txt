@@ -1,0 +1,36 @@
+[2025-04-20 15:38:13][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-20 15:38:13][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-20 15:38:54][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-20 15:38:54][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-20 15:39:21][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-20 15:39:21][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-20 15:39:44][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-20 15:39:44][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-20 15:43:48][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-20 15:43:48][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.9.1.240813
+[2025-04-20 15:48:53][LOG] {OpenGLES3Renderer.cpp:4} Init OpenGL ES3 Renderer
+[2025-04-20 15:48:54][LOG] {OpenGLES3Renderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-20 15:49:08][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-20 15:49:08][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.9.1.240813
+[2025-04-20 17:40:32][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-20 17:40:33][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.9.1.240813
+[2025-04-20 17:41:12][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-20 17:41:12][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.9.1.240813
+[2025-04-20 17:41:40][LOG] {OpenGLES3Renderer.cpp:4} Init OpenGL ES3 Renderer
+[2025-04-20 17:41:40][LOG] {OpenGLES3Renderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-20 18:50:50][LOG] {OpenGLES3Renderer.cpp:4} Init OpenGL ES3 Renderer
+[2025-04-20 18:50:50][LOG] {OpenGLES3Renderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-20 20:23:53][LOG] {OpenGLES3Renderer.cpp:4} Init OpenGL ES3 Renderer
+[2025-04-20 20:23:53][LOG] {OpenGLES3Renderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-20 20:27:22][LOG] {OpenGLES3Renderer.cpp:4} Init OpenGL ES3 Renderer
+[2025-04-20 20:27:22][LOG] {OpenGLES3Renderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-20 20:27:49][LOG] {OpenGLES3Renderer.cpp:4} Init OpenGL ES3 Renderer
+[2025-04-20 20:27:49][LOG] {OpenGLES3Renderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.9.1.240813 
+[2025-04-21 22:13:25][LOG] {OpenGLES3Renderer.cpp:4} Init OpenGL ES3 Renderer
+[2025-04-21 22:13:25][LOG] {OpenGLES3Renderer.cpp:33} OpenGL Version: OpenGL ES 3.2.0 24.12.1.241118 
+[2025-04-21 22:13:45][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-21 22:13:45][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-21 22:18:37][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-21 22:18:37][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 12:09:22][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 12:09:22][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
