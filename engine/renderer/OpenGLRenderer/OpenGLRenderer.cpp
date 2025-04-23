@@ -82,7 +82,3 @@ void OpenGLRenderer::drawSprite(const Texture* texture, const glm::vec2& positio
     m_spriteRenderer->drawSprite(texture, position, size, rotation, color);
   }
 }
-
-bool OpenGLRenderer::loadTexture(const std::string& path, Texture& texture) {
-  return texture.loadFromFile(path);
-}

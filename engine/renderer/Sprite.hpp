@@ -7,6 +7,11 @@ public:
   ~Texture();
 
   bool loadFromFile(const std::string& path);
+
+  static bool loadTextureFromFile(const std::string& path, Texture& texture) {
+    return texture.loadFromFile(path);
+  }
+
   void bind(unsigned int slot = 0) const;
   void unbind() const;
 

@@ -36,6 +36,5 @@ public:
     const glm::vec2& size = glm::vec2(1.0f),
     float rotation = 0.0f, 
     const glm::vec4& color = glm::vec4(1.0f)) = 0;
-  virtual bool loadTexture(const std::string& path, Texture& texture) = 0;
 };
 

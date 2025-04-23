@@ -20,10 +20,6 @@ CoreEngine::CoreEngine(std::shared_ptr<Context> ctx) : m_context(ctx) {
 }
 
 CoreEngine::~CoreEngine() {
-  if(m_resourceManager) {
-    m_resourceManager->cleanup();
-  }
-
   SDL_Quit();
 }
 

@@ -77,13 +77,8 @@ void OpenGLES3Renderer::initSpriteRenderer() {
   LOG("Sprite renderer initialized");
 }
 
-void OpenGLES3Renderer::drawSprite(const Texture* texture, const glm::vec2& position, 
-                               const glm::vec2& size, float rotation, const glm::vec4& color) {
+void OpenGLES3Renderer::drawSprite(const Texture* texture, const glm::vec2& position, const glm::vec2& size, float rotation, const glm::vec4& color) {
   if (m_spriteRenderer) {
     m_spriteRenderer->drawSprite(texture, position, size, rotation, color);
   }
-}
-
-bool OpenGLES3Renderer::loadTexture(const std::string& path, Texture& texture) {
-  return texture.loadFromFile(path);
 }

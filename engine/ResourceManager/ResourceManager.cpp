@@ -16,7 +16,7 @@ bool ResourceManager::loadTexture(const std::string& name, const std::string& fi
   }
 
   auto texture = std::make_unique<Texture>();
-  if(texture->loadFromFile(filepath)) {
+  if(Texture::loadTextureFromFile(filepath, *texture)) {
     m_textures[name] = std::move(texture);
     LOG("Loaded texture: ", name, " from ", filepath);
     return true;

@@ -26,7 +26,6 @@ public:
   void drawSprite(const Texture* texture, const glm::vec2& position, 
                  const glm::vec2& size, float rotation, 
                  const glm::vec4& color) override;
-  bool loadTexture(const std::string& path, Texture& texture) override;
 
 private:
   SDL_Window* m_window;

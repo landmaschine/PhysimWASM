@@ -21,7 +21,7 @@ private:
   Texture m_spriteTexture;
   
   Sprite m_backgroundSprite;
-  Sprite m_playerSprite;
+  Sprite* m_playerSprite = nullptr;
   
   glm::vec2 m_playerPosition = {100.0f, 100.0f};
   glm::vec2 m_playerVelocity = {0.0f, 0.0f};
