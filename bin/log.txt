@@ -146,3 +146,83 @@ ERROR: Linking fragment stage: Missing entry point: Each stage requires one entr
 [2025-04-22 17:28:57][LOG] {Game.cpp:12} Initializing game...
 [2025-04-22 17:28:57][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
 [2025-04-22 17:28:57][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 22:12:10][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 22:12:10][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 22:12:10][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:12:10][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 22:12:10][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:12:10][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 22:13:40][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 22:13:40][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 22:13:40][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:13:40][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 22:13:40][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:13:40][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 22:14:09][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 22:14:09][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 22:14:09][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:14:09][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 22:14:09][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:14:09][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 22:15:04][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 22:15:04][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 22:15:04][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:15:04][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 22:15:04][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:15:04][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 22:16:13][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 22:16:13][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 22:16:13][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:16:13][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 22:16:13][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:16:13][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 22:16:31][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 22:16:31][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 22:16:31][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:16:31][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 22:16:31][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:16:31][LOG] {Game.cpp:40} Game initialized
+[2025-04-22 22:16:57][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-22 22:16:57][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-22 22:16:57][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:16:57][LOG] {Game.cpp:12} Initializing game...
+[2025-04-22 22:16:57][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-22 22:16:57][LOG] {Game.cpp:40} Game initialized
+[2025-04-23 22:03:14][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-23 22:03:15][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-23 22:03:15][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:03:15][LOG] {Game.cpp:12} Initializing game...
+[2025-04-23 22:03:15][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:03:15][LOG] {Game.cpp:40} Game initialized
+[2025-04-23 22:17:46][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-23 22:17:46][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-23 22:17:46][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:17:46][LOG] {Game.cpp:12} Initializing game...
+[2025-04-23 22:17:46][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:17:46][LOG] {Game.cpp:40} Game initialized
+[2025-04-23 22:19:42][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-23 22:19:42][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-23 22:19:42][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:19:42][LOG] {Game.cpp:12} Initializing game...
+[2025-04-23 22:19:42][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:19:42][LOG] {Game.cpp:40} Game initialized
+[2025-04-23 22:21:08][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-23 22:21:08][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-23 22:21:08][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:21:08][LOG] {Game.cpp:12} Initializing game...
+[2025-04-23 22:21:08][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:21:08][LOG] {Game.cpp:40} Game initialized
+[2025-04-23 22:23:27][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-23 22:23:27][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-23 22:23:27][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:23:27][LOG] {Game.cpp:12} Initializing game...
+[2025-04-23 22:23:27][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:23:27][ERROR] {Sprite.cpp:45} Failed to load texture: assets/textures/partcle.png
+[2025-04-23 22:23:27][WARNING] {Game.cpp:27} Failed to load player texture, using fallback color
+[2025-04-23 22:23:27][LOG] {Game.cpp:40} Game initialized
+[2025-04-23 22:23:39][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-23 22:23:40][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-23 22:23:40][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:23:40][LOG] {Game.cpp:12} Initializing game...
+[2025-04-23 22:23:40][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-23 22:23:40][LOG] {Game.cpp:40} Game initialized
