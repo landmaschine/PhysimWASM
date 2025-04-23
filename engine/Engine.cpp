@@ -1,5 +1,5 @@
 #include "Engine.hpp"
-#include "core/core.hpp"
+#include "Core/core.hpp"
 #include "Application/Game.hpp"
 
 #ifdef __EMSCRIPTEN__

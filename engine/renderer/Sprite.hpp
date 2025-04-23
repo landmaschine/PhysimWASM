@@ -1,5 +1,5 @@
 #pragma once
-#include "core/common.hpp"
+#include "Core/common.hpp"
 
 class Texture {
 public:
@@ -13,6 +13,11 @@ public:
   inline unsigned int getID() const { return m_textureID; }
   inline int getWidth() const { return m_width; }
   inline int getHeight() const { return m_height; }
+  inline int getChannels() const { return m_channels; }
+
+  inline glm::vec2 getNativeSize() const {
+    return glm::vec2(static_cast<float>(m_width), static_cast<float>(m_height));
+  }
 
 private:
   unsigned int m_textureID = 0;
@@ -27,6 +32,7 @@ public:
   ~Sprite();
 
   void init(float width, float height);
+  void initWithNativeSize(const Texture* texture);
   void setTexture(const Texture* texture);
   void setPosition(const glm::vec2& position);
   void setSize(const glm::vec2& size);

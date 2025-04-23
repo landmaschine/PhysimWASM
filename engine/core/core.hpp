@@ -1,7 +1,8 @@
 #pragma once
 #include "common.hpp"
-#include "renderer/Inter_Renderer.hpp"
-#include "renderer/factory_renderer.hpp"
+#include "Renderer/Inter_Renderer.hpp"
+#include "Renderer/factory_renderer.hpp"
+#include "ResourceManager/ResourceManager.hpp"
 
 class Game;
 
@@ -28,6 +29,7 @@ public:
   void setGame(std::unique_ptr<Game> game);
 
   IRenderer* getRenderer() const { return m_renderer.get(); }
+  ResourceManager* getResourceManager() const { return m_resourceManager.get(); }
 
   WindowData getWindowSize() const {
     if(m_context) {
@@ -50,6 +52,7 @@ private:
   
   std::unique_ptr<Game> m_game;
   std::unique_ptr<IRenderer> m_renderer;
+  std::unique_ptr<ResourceManager> m_resourceManager;
   std::shared_ptr<Context> m_context;
 
 };

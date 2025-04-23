@@ -39,6 +39,8 @@ bool Texture::loadFromFile(const std::string& path) {
     glTexImage2D(GL_TEXTURE_2D, 0, format, m_width, m_height, 0, format, GL_UNSIGNED_BYTE, data);
     glGenerateMipmap(GL_TEXTURE_2D);
 
+    LOG("Loaded texture: ", path, " (", m_width, "x", m_height, ", ", m_channels, " channels)");
+
     stbi_image_free(data);
     return true;
   } else {
@@ -69,6 +71,18 @@ Sprite::~Sprite() {
 
 void Sprite::init(float width, float height) {
   m_size = { width, height };
+}
+
+void Sprite::initWithNativeSize(const Texture* texture) {
+  if(!texture) {
+    WARLOG("Cannot initialize sprite with null texture");
+    return;
+  }
+
+  m_texture = texture;
+  m_size = texture->getNativeSize();
+
+  LOG("Initialized sprite with native texture size: ", m_size.x, "x", m_size.y);
 }
 
 void Sprite::setTexture(const Texture* texture) {

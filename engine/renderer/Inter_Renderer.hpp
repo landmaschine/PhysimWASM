@@ -1,5 +1,5 @@
 #pragma once
-#include "core/common.hpp"
+#include "Core/common.hpp"
 #include "glad/glad.h"
 #include "loadShader.hpp"
 #include "Sprite.hpp"

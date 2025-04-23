@@ -13,9 +13,15 @@ void Game::init() {
   
   auto& engine = Engine::getInstance();
   IRenderer* renderer = engine.getRenderer();
+  ResourceManager* resourceManager = engine.getResourceManager();
   
   if (!renderer) {
     ERRLOG("No renderer available!");
+    return;
+  }
+
+  if(!resourceManager) {
+    ERRLOG("No resource manager available!");
     return;
   }
   

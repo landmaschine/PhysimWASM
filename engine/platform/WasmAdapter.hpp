@@ -1,5 +1,5 @@
 #pragma once
-#include "core/common.hpp"
+#include "Core/common.hpp"
 
 #ifdef __EMSCRIPTEN__
 #include <emscripten.h>

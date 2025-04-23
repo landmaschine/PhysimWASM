@@ -1,7 +1,7 @@
 #pragma once
-#include "engine/core/common.hpp"
-#include "renderer/Inter_Renderer.hpp"
-#include "renderer/SpriteRenderer.hpp"
+#include "engine/Core/common.hpp"
+#include "Renderer/Inter_Renderer.hpp"
+#include "Renderer/SpriteRenderer.hpp"
 
 class OpenGLES3Renderer : public IRenderer {
 public:

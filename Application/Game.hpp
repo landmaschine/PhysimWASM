@@ -1,6 +1,6 @@
 #pragma once
 #include "engine/Engine.hpp"
-#include "engine/renderer/Sprite.hpp"
+#include "engine/Renderer/Sprite.hpp"
 
 class Game {
 public:

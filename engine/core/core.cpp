@@ -11,12 +11,19 @@ CoreEngine::CoreEngine(std::shared_ptr<Context> ctx) : m_context(ctx) {
   m_context->api = RenderType::OPENGL;
   
   m_renderer = createRenderer(m_context);
+  m_resourceManager = std::make_unique<ResourceManager>();
+
+  LOG("Core engine initialized");
 
   m_gameLoopData.previousTicks = SDL_GetTicks();
   m_gameLoopData.accumulator = 0.0f;
 }
 
 CoreEngine::~CoreEngine() {
+  if(m_resourceManager) {
+    m_resourceManager->cleanup();
+  }
+
   SDL_Quit();
 }
 

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "core/core.hpp"
-#include "renderer/Inter_Renderer.hpp"
+#include "Core/core.hpp"
+#include "Renderer/Inter_Renderer.hpp"
 
 class CoreEngine;
 class IRenderer;
@@ -17,6 +17,13 @@ public:
   void run(std::unique_ptr<Game> game);
 
   IRenderer* getRenderer();
+  ResourceManager* getResourceManager() {
+    if(m_coreEngine) {
+      return m_coreEngine->getResourceManager();
+    }
+    return nullptr;
+  }
+
   WindowData getWindowSize() const;
 
 private:
@@ -27,4 +34,5 @@ private:
   Engine& operator=(const Engine&) = delete;
 
   std::unique_ptr<CoreEngine> m_coreEngine;
+
 };

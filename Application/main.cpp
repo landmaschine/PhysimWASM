@@ -1,4 +1,4 @@
-#include "engine/core/core.hpp"
+#include "engine/Core/core.hpp"
 #include "Game.hpp"
 
 #ifdef __EMSCRIPTEN__

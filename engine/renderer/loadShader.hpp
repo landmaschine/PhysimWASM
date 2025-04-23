@@ -6,7 +6,7 @@
 #include <unordered_map>
 
 #include "glad/glad.h"
-#include "core/common.hpp"
+#include "Core/common.hpp"
 
 class Shader {
 public:
