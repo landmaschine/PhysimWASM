@@ -11,8 +11,8 @@ enum class RenderType {
 };
 
 typedef struct WindowData_t {
-  uint32_t width;
-  uint32_t height;
+  int width;
+  int height;
   std::string name;
 } WindowData;
 

@@ -14,8 +14,8 @@ int main(int, char**){
   emscripten_get_canvas_element_size("#canvas", &width, &height);
   
   WindowData windowConfig = {
-    static_cast<uint32_t>(width),
-    static_cast<uint32_t>(height),
+    width,
+    height,
     "Physim WASM"
   };
   

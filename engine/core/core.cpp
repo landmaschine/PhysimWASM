@@ -11,7 +11,7 @@ CoreEngine::CoreEngine(std::shared_ptr<Context> ctx) : m_context(ctx) {
 
   LOG("Core engine initialized");
 
-  m_gameLoopData.lastFrameTime = SDL_GetTicks();
+  m_gameLoopData.lastFrameTime = SDLCompat::GetTicks();
   m_gameLoopData.lastFixedUpdateTime = m_gameLoopData.lastFrameTime;
   m_gameLoopData.frameCount = 0;
   m_gameLoopData.lastFPSUpdateTime = m_gameLoopData.lastFrameTime;
@@ -33,7 +33,7 @@ void CoreEngine::run() {
   LOG("Starting main game loop");
   
   while(!m_quit) {
-    uint64_t currentTime = SDL_GetTicks();
+    uint64_t currentTime = SDLCompat::GetTicks();
     double deltaTime = (currentTime - m_gameLoopData.lastFrameTime) / 1000.0;
     m_gameLoopData.lastFrameTime = currentTime;
     
@@ -42,13 +42,13 @@ void CoreEngine::run() {
       deltaTime = m_gameLoopData.maxFrameTime;
     }
 
-    uint64_t frameStartTime = SDL_GetTicks();
+    uint64_t frameStartTime = SDLCompat::GetTicks();
     
     processInput();
     
     m_gameLoopData.accumulator += deltaTime;
     
-    uint64_t updateStartTime = SDL_GetTicks();
+    uint64_t updateStartTime = SDLCompat::GetTicks();
     int updateCount = 0;
     
     while (m_gameLoopData.accumulator >= m_gameLoopData.fixedTimeStep) {
@@ -64,19 +64,19 @@ void CoreEngine::run() {
       }
     }
     
-    uint64_t updateEndTime = SDL_GetTicks();
+    uint64_t updateEndTime = SDLCompat::GetTicks();
     double updateTime = (updateEndTime - updateStartTime) / 1000.0;
     
     variableUpdate(deltaTime);
     
     double alpha = m_gameLoopData.accumulator / m_gameLoopData.fixedTimeStep;
     
-    uint64_t renderStartTime = SDL_GetTicks();
+    uint64_t renderStartTime = SDLCompat::GetTicks();
     render(alpha);
-    uint64_t renderEndTime = SDL_GetTicks();
+    uint64_t renderEndTime = SDLCompat::GetTicks();
     double renderTime = (renderEndTime - renderStartTime) / 1000.0;
     
-    uint64_t frameEndTime = SDL_GetTicks();
+    uint64_t frameEndTime = SDLCompat::GetTicks();
     double frameTime = (frameEndTime - frameStartTime) / 1000.0;
     
     updatePerformanceMetrics(frameTime, updateTime, renderTime);

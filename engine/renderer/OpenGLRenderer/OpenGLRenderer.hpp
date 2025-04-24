@@ -2,13 +2,14 @@
 #include "engine/Core/common.hpp"
 #include "Renderer/Inter_Renderer.hpp"
 #include "Renderer/SpriteRenderer.hpp"
+#include "Platform/SDLCompatability.hpp"
 
 class OpenGLRenderer : public IRenderer {
 public:
   OpenGLRenderer(const std::shared_ptr<Context> ctx);
   ~OpenGLRenderer() {
     if(m_glContext) {
-      SDL_GL_DestroyContext(m_glContext);
+      SDLCompat::DestroyGLContext(m_glContext);
     }
 
     if(m_window) {

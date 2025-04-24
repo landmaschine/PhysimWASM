@@ -3,6 +3,7 @@
 #ifdef __EMSCRIPTEN__
 #include "engine/Engine.hpp"
 #include "Application/Game.hpp"
+#include "SDLCompatability.hpp"
 
 void emscripten_main_loop_callback(void* arg) {
     WasmAdapter* adapter = static_cast<WasmAdapter*>(arg);
@@ -13,7 +14,7 @@ void emscripten_main_loop_callback(void* arg) {
     
     if (!engine || !game) return;
     
-    uint64_t currentTime = SDL_GetTicks();
+    uint64_t currentTime = SDLCompat::GetTicks();
     double deltaTime = (currentTime - adapter->getLastFrameTime()) / 1000.0;
     
     if (deltaTime > 0.25) {
@@ -84,7 +85,7 @@ void WasmAdapter::init(Engine* engine, std::unique_ptr<Game> game) {
     m_engine = engine;
     m_game = std::move(game);
     
-    m_lastFrameTime = SDL_GetTicks();
+    m_lastFrameTime = SDLCompat::GetTicks();
     m_lastFPSUpdateTime = m_lastFrameTime;
     m_accumulatedTime = 0.0;
     m_frameCount = 0;
@@ -108,17 +109,19 @@ void WasmAdapter::run() {
 void WasmAdapter::handleCanvasResize() {
     if (!m_engine) return;
     
-    double width, height;
+    int width, height;
+    emscripten_get_canvas_element_size("#canvas", &width, &height);
     
-    emscripten_get_element_css_size("#canvas", &width, &height);
+    double cssWidth, cssHeight;
+    emscripten_get_element_css_size("#canvas", &cssWidth, &cssHeight);
     
     WindowData newSize = {
-        static_cast<uint32_t>(width),
-        static_cast<uint32_t>(height),
+        width,
+        height,
         m_engine->getWindowSize().name
     };
     
-    emscripten_set_canvas_element_size("#canvas", newSize.width, newSize.height);
+    emscripten_set_canvas_element_size("#canvas", width, height);
     
     if (m_engine->getRenderer()) {
         m_engine->getRenderer()->resize();

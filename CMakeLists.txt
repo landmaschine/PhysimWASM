@@ -13,7 +13,7 @@ if(BUILD_WASM)
   set(CMAKE_EXECUTABLE_SUFFIX ".html")
   
   set(WASM_COMPILER_FLAGS
-    -sUSE_SDL=2
+    -sUSE_SDL=3
     -sWASM=1
     -sALLOW_MEMORY_GROWTH=1
     -sUSE_WEBGL2=1
@@ -29,7 +29,6 @@ if(BUILD_WASM)
     -sEXPORTED_FUNCTIONS=['_main','_updateCanvasSize']
     -sENVIRONMENT=web
     -sASYNCIFY=1
-    -O2
     --shell-file ${CMAKE_SOURCE_DIR}/bin/shell.html
   )
   
