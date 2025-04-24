@@ -6,10 +6,6 @@ CoreEngine::CoreEngine(std::shared_ptr<Context> ctx) : m_context(ctx) {
     CRITLOG("Failed to Initialize SDL3!");
   }
 
-  m_context = std::make_shared<Context>();
-  m_context->window_data = {800, 600, "Physim"};
-  m_context->api = RenderType::OPENGL;
-  
   m_renderer = createRenderer(m_context);
   m_resourceManager = std::make_unique<ResourceManager>();
 

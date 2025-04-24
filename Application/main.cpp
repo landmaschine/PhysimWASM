@@ -28,7 +28,7 @@ int main(int, char**){
 #else
   WindowData windowConfig = {800, 600, "Physim"};
 
-  if(!engine.init(windowConfig, RenderType::OPENGL_ES_3)) {
+  if(!engine.init(windowConfig, RenderType::OPENGL)) {
     CRITLOG("Failed to init engine");
     return 1;
   }
