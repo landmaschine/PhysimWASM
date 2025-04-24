@@ -21,7 +21,7 @@ if(BUILD_WASM)
     -sMIN_WEBGL_VERSION=2
     -sMAX_WEBGL_VERSION=2
     -sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']
-    --preload-file ${CMAKE_SOURCE_DIR}/assets@/assets
+    --preload-file ${CMAKE_SOURCE_DIR}/bin/assets@/assets
   )
   
   set(WASM_LINK_FLAGS
@@ -30,7 +30,7 @@ if(BUILD_WASM)
     -sENVIRONMENT=web
     -sASYNCIFY=1
     -O2
-    --shell-file ${CMAKE_SOURCE_DIR}/shell.html
+    --shell-file ${CMAKE_SOURCE_DIR}/bin/shell.html
   )
   
   add_compile_definitions(FORCE_GLES=1)

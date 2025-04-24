@@ -47,7 +47,7 @@ build cmake_object_order_depends_target_PhysimWASM: phony || .
 build CMakeFiles/PhysimWASM.dir/engine/Core/core.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Core/core.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Core\core.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\Core
@@ -55,7 +55,7 @@ build CMakeFiles/PhysimWASM.dir/engine/Core/core.cpp.o: CXX_COMPILER__PhysimWASM
 build CMakeFiles/PhysimWASM.dir/engine/Engine.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Engine.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Engine.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine
@@ -63,7 +63,7 @@ build CMakeFiles/PhysimWASM.dir/engine/Engine.cpp.o: CXX_COMPILER__PhysimWASM_un
 build CMakeFiles/PhysimWASM.dir/engine/Logger/Logger.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Logger/Logger.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Logger\Logger.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\Logger
@@ -71,7 +71,7 @@ build CMakeFiles/PhysimWASM.dir/engine/Logger/Logger.cpp.o: CXX_COMPILER__Physim
 build CMakeFiles/PhysimWASM.dir/engine/Platform/WasmAdapter.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Platform/WasmAdapter.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Platform\WasmAdapter.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\Platform
@@ -79,7 +79,7 @@ build CMakeFiles/PhysimWASM.dir/engine/Platform/WasmAdapter.cpp.o: CXX_COMPILER_
 build CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLES3Renderer/OpenGLES3Renderer.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Renderer/OpenGLES3Renderer/OpenGLES3Renderer.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Renderer\OpenGLES3Renderer\OpenGLES3Renderer.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\Renderer\OpenGLES3Renderer
@@ -87,7 +87,7 @@ build CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLES3Renderer/OpenGLES3Rende
 build CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLRenderer/OpenGLRenderer.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Renderer/OpenGLRenderer/OpenGLRenderer.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Renderer\OpenGLRenderer\OpenGLRenderer.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\Renderer\OpenGLRenderer
@@ -95,7 +95,7 @@ build CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLRenderer/OpenGLRenderer.cp
 build CMakeFiles/PhysimWASM.dir/engine/Renderer/Sprite.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Renderer/Sprite.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Renderer\Sprite.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\Renderer
@@ -103,7 +103,7 @@ build CMakeFiles/PhysimWASM.dir/engine/Renderer/Sprite.cpp.o: CXX_COMPILER__Phys
 build CMakeFiles/PhysimWASM.dir/engine/Renderer/SpriteRenderer.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Renderer/SpriteRenderer.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Renderer\SpriteRenderer.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\Renderer
@@ -111,7 +111,7 @@ build CMakeFiles/PhysimWASM.dir/engine/Renderer/SpriteRenderer.cpp.o: CXX_COMPIL
 build CMakeFiles/PhysimWASM.dir/engine/ResourceManager/ResourceManager.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/ResourceManager/ResourceManager.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\ResourceManager\ResourceManager.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\ResourceManager
@@ -119,7 +119,7 @@ build CMakeFiles/PhysimWASM.dir/engine/ResourceManager/ResourceManager.cpp.o: CX
 build CMakeFiles/PhysimWASM.dir/engine/third_party/glad/src/glad.c.o: C_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/src/glad.c || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\third_party\glad\src\glad.c.o.d
-  FLAGS = -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\third_party\glad\src
@@ -127,7 +127,7 @@ build CMakeFiles/PhysimWASM.dir/engine/third_party/glad/src/glad.c.o: C_COMPILER
 build CMakeFiles/PhysimWASM.dir/Application/Game.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/Application/Game.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\Application\Game.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\Application
@@ -135,7 +135,7 @@ build CMakeFiles/PhysimWASM.dir/Application/Game.cpp.o: CXX_COMPILER__PhysimWASM
 build CMakeFiles/PhysimWASM.dir/Application/main.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/Application/main.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\Application\main.cpp.o.d
-  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets
+  FLAGS = -std=gnu++17 -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
   INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\Application
@@ -149,7 +149,7 @@ build CMakeFiles/PhysimWASM.dir/Application/main.cpp.o: CXX_COMPILER__PhysimWASM
 # Link the executable C:\Users\leon\Documents\dev\PhysimWASM\web\PhysimWASM.html
 
 build C$:/Users/leon/Documents/dev/PhysimWASM/web/PhysimWASM.html: CXX_EXECUTABLE_LINKER__PhysimWASM_ CMakeFiles/PhysimWASM.dir/engine/Core/core.cpp.o CMakeFiles/PhysimWASM.dir/engine/Engine.cpp.o CMakeFiles/PhysimWASM.dir/engine/Logger/Logger.cpp.o CMakeFiles/PhysimWASM.dir/engine/Platform/WasmAdapter.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLES3Renderer/OpenGLES3Renderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLRenderer/OpenGLRenderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/Sprite.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/SpriteRenderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/ResourceManager/ResourceManager.cpp.o CMakeFiles/PhysimWASM.dir/engine/third_party/glad/src/glad.c.o CMakeFiles/PhysimWASM.dir/Application/Game.cpp.o CMakeFiles/PhysimWASM.dir/Application/main.cpp.o
-  LINK_FLAGS = -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 -sEXPORTED_RUNTIME_METHODS=['ccall','cwrap'] --preload-file C:/Users/leon/Documents/dev/PhysimWASM/assets@/assets -sEXPORTED_FUNCTIONS=['_main','_updateCanvasSize'] -sENVIRONMENT=web -sASYNCIFY=1 -O2 --shell-file C:/Users/leon/Documents/dev/PhysimWASM/shell.html
+  LINK_FLAGS = -sUSE_SDL=2 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 -sEXPORTED_RUNTIME_METHODS=['ccall','cwrap'] --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets -sEXPORTED_FUNCTIONS=['_main','_updateCanvasSize'] -sENVIRONMENT=web -sASYNCIFY=1 -O2 --shell-file C:/Users/leon/Documents/dev/PhysimWASM/bin/shell.html
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

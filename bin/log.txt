@@ -102,3 +102,19 @@
 [2025-04-24 23:08:57][LOG] {core.cpp:33} Starting main game loop
 [2025-04-24 23:09:12][LOG] {core.cpp:104} Game loop terminated
 [2025-04-24 23:09:12][LOG] {ResourceManager.cpp:121} Resource Manager cleanup complete
+[2025-04-24 23:31:50][LOG] {OpenGLRenderer.cpp:4} Init OpenGL Renderer
+[2025-04-24 23:31:50][LOG] {OpenGLRenderer.cpp:33} OpenGL Version: 4.6.0 Core Profile Context 24.12.1.241118
+[2025-04-24 23:31:50][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-24 23:31:50][LOG] {ResourceManager.cpp:5} ResourceManager initialized
+[2025-04-24 23:31:50][LOG] {core.cpp:12} Core engine initialized
+[2025-04-24 23:31:50][LOG] {Game.cpp:12} Initializing game...
+[2025-04-24 23:31:50][LOG] {OpenGLRenderer.cpp:77} Sprite renderer initialized
+[2025-04-24 23:31:50][LOG] {Sprite.cpp:42} Loaded texture: assets/textures/white_particle.png (128x128, 4 channels)
+[2025-04-24 23:31:50][LOG] {ResourceManager.cpp:21} Loaded texture: player from assets/textures/white_particle.png
+[2025-04-24 23:31:50][LOG] {Sprite.cpp:85} Initialized sprite with native texture size: 128x128
+[2025-04-24 23:31:50][LOG] {ResourceManager.cpp:96} Created sprite: playerSprite with native texture size 128x128
+[2025-04-24 23:31:50][LOG] {Game.cpp:43} Player sprite created with size: 128x128
+[2025-04-24 23:31:50][LOG] {Game.cpp:48} Game initialized
+[2025-04-24 23:31:50][LOG] {core.cpp:33} Starting main game loop
+[2025-04-24 23:31:52][LOG] {core.cpp:104} Game loop terminated
+[2025-04-24 23:31:52][LOG] {ResourceManager.cpp:121} Resource Manager cleanup complete

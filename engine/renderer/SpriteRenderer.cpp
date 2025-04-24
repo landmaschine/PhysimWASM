@@ -6,9 +6,9 @@ SpriteRenderer::~SpriteRenderer() {}
 
 void SpriteRenderer::init(int screenWidth, int screenHeight) {
 #ifdef __EMSCRIPTEN__
-  m_shader.init("shaders/OpenGLES3/vertex.vert", "shaders/OpenGLES3/fragment.frag");
+  m_shader.init("assets/shaders/OpenGLES3/vertex.vert", "assets/shaders/OpenGLES3/fragment.frag");
 #else
-  m_shader.init("shaders/OpenGL/vertex.vert", "shaders/OpenGL/fragment.frag");
+  m_shader.init("assets/shaders/OpenGL/vertex.vert", "assets/shaders/OpenGL/fragment.frag");
 #endif
 
 

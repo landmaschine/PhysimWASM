@@ -10,7 +10,7 @@ int main(int, char**){
   auto& engine = Engine::getInstance();
 
 #ifdef __EMSCRIPTEN__
-  double width, height;
+  int width, height;
   emscripten_get_canvas_element_size("#canvas", &width, &height);
   
   WindowData windowConfig = {
