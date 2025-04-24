@@ -37,7 +37,7 @@
     </style>
   </head>
   <body>
-    <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <canvas id="canvas"></canvas>
     <div id="status">Downloading...</div>
     
     <script>
@@ -49,9 +49,8 @@
         canvas: (function() {
           var canvas = document.getElementById('canvas');
           canvas.addEventListener("webglcontextlost", function(e) { 
-            alert('WebGL context lost. You will need to reload the page.'); 
-            e.preventDefault(); 
-          }, false);
+
+          }, true);
           return canvas;
         })(),
         setStatus: function(text) {
@@ -61,20 +60,31 @@
         monitorRunDependencies: function(left) {
           this.totalDependencies = Math.max(this.totalDependencies, left);
           Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
+        },
+        onRuntimeInitialized: function() {
+          console.log("Runtime initialized!");
+          resizeCanvas();
+          
+          window.addEventListener('resize', resizeCanvas);
         }
       };
+      
+      function resizeCanvas() {
+        var canvas = document.getElementById('canvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        if (typeof Module !== 'undefined' && Module.ccall) {
+          try {
+            Module.ccall('updateCanvasSize', null, [], []);
+            console.log("Canvas resized: " + canvas.width + "x" + canvas.height);
+          } catch (e) {
+            console.error("Error resizing canvas:", e);
+          }
+        }
+      }
       
       Module.setStatus('Downloading...');
-      
-      window.addEventListener('resize', function() {
-        if (typeof Module !== 'undefined' && Module.ccall) {
-          Module.ccall('updateCanvasSize', null, [], []);
-        }
-      });
-      
-      window.onload = function() {
-        window.dispatchEvent(new Event('resize'));
-      };
     </script>
     {{{ SCRIPT }}}
   </body>

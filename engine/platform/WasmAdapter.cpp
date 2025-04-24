@@ -112,8 +112,7 @@ void WasmAdapter::handleCanvasResize() {
     int width, height;
     emscripten_get_canvas_element_size("#canvas", &width, &height);
     
-    double cssWidth, cssHeight;
-    emscripten_get_element_css_size("#canvas", &cssWidth, &cssHeight);
+    LOG("Canvas resized to: ", width, "x", height);
     
     WindowData newSize = {
         width,
@@ -121,13 +120,9 @@ void WasmAdapter::handleCanvasResize() {
         m_engine->getWindowSize().name
     };
     
-    emscripten_set_canvas_element_size("#canvas", width, height);
-    
     if (m_engine->getRenderer()) {
         m_engine->getRenderer()->resize();
     }
-    
-    LOG("Canvas resized to: ", newSize.width, "x", newSize.height);
 }
 
 uint64_t WasmAdapter::getLastFrameTime() const {
@@ -172,7 +167,9 @@ void WasmAdapter::setLastFPSUpdateTime(uint64_t time) {
 
 extern "C" {
     EMSCRIPTEN_KEEPALIVE void updateCanvasSize() {
+#ifdef __EMSCRIPTEN__
         WasmAdapter::getInstance().handleCanvasResize();
+#endif
     }
 }
 

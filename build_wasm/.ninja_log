@@ -15,3 +15,16 @@
 13	534	7672342991902972	build.ninja	87d27718b097eeff
 13	535	7672342991902972	build.ninja	87d27718b097eeff
 19	1662	7672342992298947	C:/Users/leon/Documents/dev/PhysimWASM/web/PhysimWASM.html	8213e5d45ff1ea82
+8	1410	7672350148582144	CMakeFiles/PhysimWASM.dir/Application/Game.cpp.o	ef65c05efeac18fc
+1411	2966	7672350162607242	C:/Users/leon/Documents/dev/PhysimWASM/web/PhysimWASM.html	8213e5d45ff1ea82
+8	1456	7672352028952822	CMakeFiles/PhysimWASM.dir/engine/Platform/WasmAdapter.cpp.o	bc8e05e2268feaa8
+1457	3038	7672352043441902	C:/Users/leon/Documents/dev/PhysimWASM/web/PhysimWASM.html	8213e5d45ff1ea82
+29	1965	7672353846278998	CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLES3Renderer/OpenGLES3Renderer.cpp.o	d76351992aca07e0
+24	2005	7672353846216750	CMakeFiles/PhysimWASM.dir/engine/Platform/WasmAdapter.cpp.o	bc8e05e2268feaa8
+37	2052	7672353846354156	CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLRenderer/OpenGLRenderer.cpp.o	bc9a2737bd35fda0
+55	2091	7672353846530785	CMakeFiles/PhysimWASM.dir/Application/Game.cpp.o	ef65c05efeac18fc
+17	2101	7672353846146724	CMakeFiles/PhysimWASM.dir/engine/Engine.cpp.o	b5227f373ec46cdb
+64	2130	7672353846636020	CMakeFiles/PhysimWASM.dir/Application/main.cpp.o	d64595a8ebd49af3
+9	2156	7672353846071514	CMakeFiles/PhysimWASM.dir/engine/Core/core.cpp.o	9acca175b063c58a
+46	2230	7672353846439338	CMakeFiles/PhysimWASM.dir/engine/ResourceManager/ResourceManager.cpp.o	b28b1d242ab673bc
+2231	3842	7672353868289809	C:/Users/leon/Documents/dev/PhysimWASM/web/PhysimWASM.html	8213e5d45ff1ea82

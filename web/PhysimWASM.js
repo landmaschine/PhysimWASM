@@ -24,7 +24,7 @@ var ENVIRONMENT_IS_SHELL = false;
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\leon\AppData\Local\Temp\tmp_xlps18w.js
+// include: C:\Users\leon\AppData\Local\Temp\tmp_h78mjlu.js
 
   Module['expectedDataFileDownloads'] ??= 0;
   Module['expectedDataFileDownloads']++;
@@ -195,25 +195,25 @@ Module['FS_createPath']("/assets", "textures", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/assets/Errir.png", "start": 0, "end": 423}, {"filename": "/assets/shaders/OpenGL/fragment.frag", "start": 423, "end": 671}, {"filename": "/assets/shaders/OpenGL/vertex.vert", "start": 671, "end": 969}, {"filename": "/assets/shaders/OpenGLES3/fragment.frag", "start": 969, "end": 1217}, {"filename": "/assets/shaders/OpenGLES3/vertex.vert", "start": 1217, "end": 1515}, {"filename": "/assets/textures/player.png", "start": 1515, "end": 51652}, {"filename": "/assets/textures/white_particle.png", "start": 51652, "end": 52544}], "remote_package_size": 52544});
+    loadPackage({"files": [{"filename": "/assets/Errir.png", "start": 0, "end": 423}, {"filename": "/assets/shaders/OpenGL/fragment.frag", "start": 423, "end": 671}, {"filename": "/assets/shaders/OpenGL/vertex.vert", "start": 671, "end": 969}, {"filename": "/assets/shaders/OpenGLES3/fragment.frag", "start": 969, "end": 1217}, {"filename": "/assets/shaders/OpenGLES3/vertex.vert", "start": 1217, "end": 1515}, {"filename": "/assets/textures/white_particle.png", "start": 1515, "end": 2407}], "remote_package_size": 2407});
 
   })();
 
-// end include: C:\Users\leon\AppData\Local\Temp\tmp_xlps18w.js
-// include: C:\Users\leon\AppData\Local\Temp\tmpunmpasrr.js
+// end include: C:\Users\leon\AppData\Local\Temp\tmp_h78mjlu.js
+// include: C:\Users\leon\AppData\Local\Temp\tmpc2d0zpw6.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if (Module['$ww'] || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: C:\Users\leon\AppData\Local\Temp\tmpunmpasrr.js
-// include: C:\Users\leon\AppData\Local\Temp\tmpdrnt8l_g.js
+  // end include: C:\Users\leon\AppData\Local\Temp\tmpc2d0zpw6.js
+// include: C:\Users\leon\AppData\Local\Temp\tmpd0zupok8.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: C:\Users\leon\AppData\Local\Temp\tmpdrnt8l_g.js
+  // end include: C:\Users\leon\AppData\Local\Temp\tmpd0zupok8.js
 
 
 var arguments_ = [];

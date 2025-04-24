@@ -37,4 +37,3 @@ public:
     float rotation = 0.0f, 
     const glm::vec4& color = glm::vec4(1.0f)) = 0;
 };
-
