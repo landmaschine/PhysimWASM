@@ -7,17 +7,38 @@
 class Game;
 
 typedef struct GameLoopData_t {
-  uint64_t previousTicks;          
-  double accumulator;              
-  const double maxFrameTime = 0.25; 
-  
-  const double targetFPS = 165.0;    
-  const double targetFrameTime = 1.0 / 165.0;  
-  
-  uint32_t fpsFrameCount = 0;      
-  double fpsTimeElapsed = 0.0;     
-  uint64_t lastFPSUpdateTime = 0;  
+  uint64_t lastFrameTime = 0;
+  uint64_t lastFixedUpdateTime = 0;
+  double accumulator = 0.0f;
+
+
+  bool limitFrameRate = true;
+  double targetFPS = 165.0;
+  double fixedTimeStep = 1.0f / 165.f;
+  double maxFrameTime = 0.25f;
+
+  uint32_t frameCount = 0;
+  uint32_t fixedUpdateCount = 0;
+  uint64_t lastFPSUpdateTime = 0;
+  uint32_t fpsUpdateInterval = 1000;
+
+  double currentFPS = 0.0f;
+
+  int maxUpdatesPerFrame = 5;
 } GameLoopData;
+
+typedef struct PerformanceMetrics_t {
+  double avgFrameTime = 0.0f;
+  double avgUpdateTime = 0.0f;
+  double avgRenderTime = 0.0f;
+
+  std::vector<double> frameTimeHistory;
+  std::vector<double> updateTimeHistory;
+  std::vector<double> renderTimeHistory;
+
+  size_t frameTimeHistorySize = 60;
+  size_t frameTimeHistoryIndex = 0;
+} PerformanceMetrics;
 
 class CoreEngine {
 public:
@@ -25,8 +46,16 @@ public:
   ~CoreEngine();
 
   void run();
-
   void setGame(std::unique_ptr<Game> game);
+
+  void processInput();
+  void fixedUpdate(double fixedTimeStep);
+  void variableUpdate(double deltaTime);
+  void render(double interpolation);
+
+  void updatePerformanceMetrics(double frameTime, double updateTime, double renderTime);
+  void limitFrameRate(uint64_t frameStartTime);
+  PerformanceMetrics getPerformanceMetrics() const;
 
   IRenderer* getRenderer() const { return m_renderer.get(); }
   ResourceManager* getResourceManager() const { return m_resourceManager.get(); }
@@ -41,14 +70,10 @@ public:
   }
 
 private:
-  void input();
-  void update();
-  void render();
-
-private:
   bool m_quit = false;
   SDL_Event m_event;
   GameLoopData m_gameLoopData;
+  PerformanceMetrics m_performanceMetrics;
   
   std::unique_ptr<Game> m_game;
   std::unique_ptr<IRenderer> m_renderer;
