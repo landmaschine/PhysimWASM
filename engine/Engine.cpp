@@ -3,7 +3,7 @@
 #include "Application/Game.hpp"
 
 #ifdef __EMSCRIPTEN__
-#include "platform/WasmAdapter.hpp"
+#include "Platform/WasmAdapter.hpp"
 #endif
 
 Engine& Engine::getInstance() {

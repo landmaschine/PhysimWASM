@@ -11,7 +11,6 @@ typedef struct GameLoopData_t {
   uint64_t lastFixedUpdateTime = 0;
   double accumulator = 0.0f;
 
-
   bool limitFrameRate = true;
   double targetFPS = 165.0;
   double fixedTimeStep = 1.0f / 165.f;

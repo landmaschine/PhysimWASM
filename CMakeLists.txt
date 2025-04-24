@@ -13,22 +13,22 @@ if(BUILD_WASM)
   set(CMAKE_EXECUTABLE_SUFFIX ".html")
   
   set(WASM_COMPILER_FLAGS
-    -s USE_SDL=2
-    -s WASM=1
-    -s ALLOW_MEMORY_GROWTH=1
-    -s USE_WEBGL2=1
-    -s FULL_ES3=1
-    -s MIN_WEBGL_VERSION=2
-    -s MAX_WEBGL_VERSION=2
-    -s EXPORTED_RUNTIME_METHODS=['ccall','cwrap']
+    -sUSE_SDL=2
+    -sWASM=1
+    -sALLOW_MEMORY_GROWTH=1
+    -sUSE_WEBGL2=1
+    -sFULL_ES3=1
+    -sMIN_WEBGL_VERSION=2
+    -sMAX_WEBGL_VERSION=2
+    -sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']
     --preload-file ${CMAKE_SOURCE_DIR}/assets@/assets
   )
   
   set(WASM_LINK_FLAGS
     ${WASM_COMPILER_FLAGS}
-    -s EXPORTED_FUNCTIONS=['_main','_updateCanvasSize']
-    -s ENVIRONMENT=web
-    -s ASYNCIFY=1
+    -sEXPORTED_FUNCTIONS=['_main','_updateCanvasSize']
+    -sENVIRONMENT=web
+    -sASYNCIFY=1
     -O2
     --shell-file ${CMAKE_SOURCE_DIR}/shell.html
   )
@@ -116,5 +116,3 @@ else()
   endif()
 endif()
 
-# Create directory for assets
-file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/assets/shaders)

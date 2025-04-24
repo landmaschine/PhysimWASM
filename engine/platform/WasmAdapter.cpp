@@ -47,7 +47,7 @@ void emscripten_main_loop_callback(void* arg) {
     adapter->addAccumulatedTime(deltaTime);
     
     int updateCount = 0;
-    const double fixedTimeStep = 1.0 / 60.0; // 60 Hz physics
+    const double fixedTimeStep = 1.0 / 60.0;
     
     while (adapter->getAccumulatedTime() >= fixedTimeStep && updateCount < 5) {
         if (game) {

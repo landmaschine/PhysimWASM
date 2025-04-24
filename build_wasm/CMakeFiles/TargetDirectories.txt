@@ -1,0 +1,3 @@
+C:/Users/leon/Documents/dev/PhysimWASM/build_wasm/CMakeFiles/PhysimWASM.dir
+C:/Users/leon/Documents/dev/PhysimWASM/build_wasm/CMakeFiles/edit_cache.dir
+C:/Users/leon/Documents/dev/PhysimWASM/build_wasm/CMakeFiles/rebuild_cache.dir

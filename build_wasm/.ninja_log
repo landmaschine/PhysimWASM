@@ -1,0 +1,15 @@
+# ninja log v6
+4	579	7672331330570070	build.ninja	87d27718b097eeff
+77	490	7672331331574053	CMakeFiles/PhysimWASM.dir/engine/third_party/glad/src/glad.c.o	ad9dbeb17422021f
+27	1681	7672332435164950	CMakeFiles/PhysimWASM.dir/engine/Logger/Logger.cpp.o	31f2566257365578
+40	2198	7672332435305214	CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLES3Renderer/OpenGLES3Renderer.cpp.o	3f21db1f25af86f5
+49	2202	7672332435395330	CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLRenderer/OpenGLRenderer.cpp.o	a90126c41cea592d
+33	2208	7672332435230144	CMakeFiles/PhysimWASM.dir/engine/Platform/WasmAdapter.cpp.o	55a3e19891d3041a
+83	2258	7672332435727470	CMakeFiles/PhysimWASM.dir/Application/Game.cpp.o	cc481fb53d78d0df
+11	2283	7672332435019758	CMakeFiles/PhysimWASM.dir/engine/Core/core.cpp.o	3baac963bfe71eeb
+18	2285	7672332435089739	CMakeFiles/PhysimWASM.dir/engine/Engine.cpp.o	3f352a4ffa34f2bd
+65	2296	7672332435552549	CMakeFiles/PhysimWASM.dir/engine/Renderer/SpriteRenderer.cpp.o	f948a2e06fbd36e1
+58	2305	7672332435477314	CMakeFiles/PhysimWASM.dir/engine/Renderer/Sprite.cpp.o	886f64a0c2b48fbe
+74	2418	7672332435637134	CMakeFiles/PhysimWASM.dir/engine/ResourceManager/ResourceManager.cpp.o	8bd8a489ec31032b
+26	1512	7672333011550752	CMakeFiles/PhysimWASM.dir/engine/Platform/WasmAdapter.cpp.o	55a3e19891d3041a
+19	1557	7672333011475545	CMakeFiles/PhysimWASM.dir/engine/Engine.cpp.o	3f352a4ffa34f2bd

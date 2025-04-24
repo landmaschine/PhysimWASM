@@ -37,7 +37,13 @@ std::string Logger::getCurrentTime() const {
   std::time_t now = std::time(nullptr);
   char buf[64];
   std::tm timeinfo;
+  
+#ifdef __EMSCRIPTEN__
+  localtime_r(&now, &timeinfo);
+#else
   localtime_s(&timeinfo, &now);
+#endif
+  
   std::strftime(buf, sizeof(buf), "%F %T", &timeinfo);
   return buf;
 }
