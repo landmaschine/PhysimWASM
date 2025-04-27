@@ -82,3 +82,9 @@ void OpenGLES3Renderer::drawSprite(const Texture* texture, const glm::vec2& posi
     m_spriteRenderer->drawSprite(texture, position, size, rotation, color);
   }
 }
+
+void OpenGLES3Renderer::drawSprite(const Sprite& sprite) {
+  if(m_spriteRenderer) {
+    m_spriteRenderer->drawSprite(sprite);
+  }
+}

@@ -56,11 +56,15 @@
         setStatus: function(text) {
           statusElement.innerHTML = text;
         },
-        totalDependencies: 0,
         monitorRunDependencies: function(left) {
           this.totalDependencies = Math.max(this.totalDependencies, left);
-          Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
-        },
+          if(left) {
+            statusElement.innerHTML = 'Preparing... ( ' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')';
+          } else {
+            statusElement.style.display = 'none';
+            console.log('All downloads complete.');
+          }
+        }, 
         onRuntimeInitialized: function() {
           console.log("Runtime initialized!");
           resizeCanvas();

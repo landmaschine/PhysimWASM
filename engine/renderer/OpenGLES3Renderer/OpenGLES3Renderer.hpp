@@ -24,6 +24,7 @@ public:
   void setShader(const Shader&) override;
 
   void initSpriteRenderer() override;
+  void drawSprite(const Sprite& sprite) override;
   void drawSprite(const Texture* texture, const glm::vec2& position, 
                  const glm::vec2& size, float rotation, 
                  const glm::vec4& color) override;

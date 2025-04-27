@@ -92,6 +92,14 @@ build CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLRenderer/OpenGLRenderer.cp
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\Renderer\OpenGLRenderer
 
+build CMakeFiles/PhysimWASM.dir/engine/Renderer/SoftwareRenderer/SoftwareRenderer.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Renderer/SoftwareRenderer/SoftwareRenderer.cpp || cmake_object_order_depends_target_PhysimWASM
+  DEFINES = -DFORCE_GLES=1
+  DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Renderer\SoftwareRenderer\SoftwareRenderer.cpp.o.d
+  FLAGS = -std=gnu++17 -sUSE_SDL=3 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 "-sEXPORTED_RUNTIME_METHODS=['ccall','cwrap']" --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets
+  INCLUDES = -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/SDL3/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party/glad/include -IC:/Users/leon/Documents/dev/PhysimWASM/engine/third_party -IC:/Users/leon/Documents/dev/PhysimWASM/engine -IC:/Users/leon/Documents/dev/PhysimWASM
+  OBJECT_DIR = CMakeFiles\PhysimWASM.dir
+  OBJECT_FILE_DIR = CMakeFiles\PhysimWASM.dir\engine\Renderer\SoftwareRenderer
+
 build CMakeFiles/PhysimWASM.dir/engine/Renderer/Sprite.cpp.o: CXX_COMPILER__PhysimWASM_unscanned_ C$:/Users/leon/Documents/dev/PhysimWASM/engine/Renderer/Sprite.cpp || cmake_object_order_depends_target_PhysimWASM
   DEFINES = -DFORCE_GLES=1
   DEP_FILE = CMakeFiles\PhysimWASM.dir\engine\Renderer\Sprite.cpp.o.d
@@ -148,7 +156,7 @@ build CMakeFiles/PhysimWASM.dir/Application/main.cpp.o: CXX_COMPILER__PhysimWASM
 #############################################
 # Link the executable C:\Users\leon\Documents\dev\PhysimWASM\web\PhysimWASM.html
 
-build C$:/Users/leon/Documents/dev/PhysimWASM/web/PhysimWASM.html: CXX_EXECUTABLE_LINKER__PhysimWASM_ CMakeFiles/PhysimWASM.dir/engine/Core/core.cpp.o CMakeFiles/PhysimWASM.dir/engine/Engine.cpp.o CMakeFiles/PhysimWASM.dir/engine/Logger/Logger.cpp.o CMakeFiles/PhysimWASM.dir/engine/Platform/WasmAdapter.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLES3Renderer/OpenGLES3Renderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLRenderer/OpenGLRenderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/Sprite.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/SpriteRenderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/ResourceManager/ResourceManager.cpp.o CMakeFiles/PhysimWASM.dir/engine/third_party/glad/src/glad.c.o CMakeFiles/PhysimWASM.dir/Application/Game.cpp.o CMakeFiles/PhysimWASM.dir/Application/main.cpp.o
+build C$:/Users/leon/Documents/dev/PhysimWASM/web/PhysimWASM.html: CXX_EXECUTABLE_LINKER__PhysimWASM_ CMakeFiles/PhysimWASM.dir/engine/Core/core.cpp.o CMakeFiles/PhysimWASM.dir/engine/Engine.cpp.o CMakeFiles/PhysimWASM.dir/engine/Logger/Logger.cpp.o CMakeFiles/PhysimWASM.dir/engine/Platform/WasmAdapter.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLES3Renderer/OpenGLES3Renderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/OpenGLRenderer/OpenGLRenderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/SoftwareRenderer/SoftwareRenderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/Sprite.cpp.o CMakeFiles/PhysimWASM.dir/engine/Renderer/SpriteRenderer.cpp.o CMakeFiles/PhysimWASM.dir/engine/ResourceManager/ResourceManager.cpp.o CMakeFiles/PhysimWASM.dir/engine/third_party/glad/src/glad.c.o CMakeFiles/PhysimWASM.dir/Application/Game.cpp.o CMakeFiles/PhysimWASM.dir/Application/main.cpp.o
   LINK_FLAGS = -sUSE_SDL=3 -sWASM=1 -sALLOW_MEMORY_GROWTH=1 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sMIN_WEBGL_VERSION=2 -sMAX_WEBGL_VERSION=2 -sEXPORTED_RUNTIME_METHODS=['ccall','cwrap'] --preload-file C:/Users/leon/Documents/dev/PhysimWASM/bin/assets@/assets -sEXPORTED_FUNCTIONS=['_main','_updateCanvasSize'] -sENVIRONMENT=web -sASYNCIFY=1 --shell-file C:/Users/leon/Documents/dev/PhysimWASM/bin/shell.html
   OBJECT_DIR = CMakeFiles\PhysimWASM.dir
   POST_BUILD = cd .

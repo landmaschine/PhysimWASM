@@ -32,6 +32,7 @@ public:
   virtual void setShader(const Shader&) = 0;
 
   virtual void initSpriteRenderer() = 0;
+  virtual void drawSprite(const Sprite& sprite) = 0;
   virtual void drawSprite(const Texture* texture, const glm::vec2& position, 
     const glm::vec2& size = glm::vec2(1.0f),
     float rotation = 0.0f, 

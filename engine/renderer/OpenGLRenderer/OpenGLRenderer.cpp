@@ -82,3 +82,9 @@ void OpenGLRenderer::drawSprite(const Texture* texture, const glm::vec2& positio
     m_spriteRenderer->drawSprite(texture, position, size, rotation, color);
   }
 }
+
+void OpenGLRenderer::drawSprite(const Sprite& sprite) {
+  if(m_spriteRenderer) {
+    m_spriteRenderer->drawSprite(sprite);
+  }
+}
