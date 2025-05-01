@@ -50,7 +50,7 @@ public:
   PhysicsEngine();
   ~PhysicsEngine();
 
-  size_t addBody(const RigidBody& body);
+  size_t addBody(RigidBody&& body);
   void removeBody(size_t index);
   RigidBody* getBody(size_t index);
   void setIntegrationMethod(IntegrationMethod method);

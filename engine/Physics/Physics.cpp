@@ -1,24 +1,23 @@
 #include "Physics.hpp"
 
 void VerletSolver::integrate(std::vector<RigidBody>& bodies, float dt) {
-  for (auto& body : bodies) {
-    if (body.type == BodyType::STATIC || !body.active) continue;
-    
+  for(auto& body : bodies) {
+    if(body.type == BodyType::STATIC || !body.active) continue;
+
     body.applyForce(body.mass * m_gravity);
-    
+
     glm::vec2 oldPosition = body.position;
-    
+
     glm::vec2 acceleration = body.forceAccumulator * body.invMass;
     body.velocity += acceleration * dt;
-    
+
     body.position = 2.0f * body.position - body.prevPosition + acceleration * dt * dt;
-    
     body.prevPosition = oldPosition;
-    
-    float angularAcceleration = body.torqueAccumulator * body.invInertia;
-    body.angularVelocity += angularAcceleration * dt;
-    body.rotation += body.angularVelocity * dt;
-    
+
+    float angularVelocity = body.torqueAccumulator * body.invInertia;
+    body.angularVelocity += angularVelocity * dt;
+    body.rotation += angularVelocity * dt;
+
     body.clearForces();
   }
 }
@@ -26,22 +25,19 @@ void VerletSolver::integrate(std::vector<RigidBody>& bodies, float dt) {
 void LeapFrogSolver::integrate(std::vector<RigidBody>& bodies, float dt) {
   for (auto& body : bodies) {
     if (body.type == BodyType::STATIC || !body.active) continue;
-    
     body.applyForce(body.mass * m_gravity);
     
     glm::vec2 acceleration = body.forceAccumulator * body.invMass;
     
     body.velocity += acceleration * (dt * 0.5f);
-    
     body.position += body.velocity * dt;
-    
     body.velocity += acceleration * (dt * 0.5f);
     
     float angularAcceleration = body.torqueAccumulator * body.invInertia;
     body.angularVelocity += angularAcceleration * dt;
     body.rotation += body.angularVelocity * dt;
     
-    body.clearForces();
+    body.clearForces(); 
   }
 }
 
@@ -197,8 +193,8 @@ PhysicsEngine::~PhysicsEngine() {
 
 }
 
-size_t PhysicsEngine::addBody(const RigidBody& body) {
-  m_bodies.push_back(body);
+size_t PhysicsEngine::addBody(RigidBody&& body) {
+  m_bodies.push_back(std::move(body));
   return m_bodies.size() - 1;
 }
 
